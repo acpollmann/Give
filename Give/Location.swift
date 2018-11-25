@@ -22,6 +22,30 @@ class Location {
     init() {
         
     }
+    init(name: String, lat: Double, long: Double, addr: String, city: String, state: String, zip: String, web: String, phone: String, type: String) {
+        self.name = name
+        self.lat = lat
+        self.long = long
+        self.address = addr
+        self.city = city
+        self.state = state
+        self.zipCode = zip
+        self.website = web
+        self.phoneNo = phone
+        self.type = type
+    }
+    init(name: String, lat: String, long: String, addr: String, city: String, state: String, zip: String, web: String, phone: String, type: String) {
+        self.name = name
+        self.lat = Double(lat)!
+        self.long = Double(long)!
+        self.address = addr
+        self.city = city
+        self.state = state
+        self.zipCode = zip
+        self.website = web
+        self.phoneNo = phone
+        self.type = type
+    }
     func setName(name : String)  {
         self.name = name;
     }
@@ -63,6 +87,18 @@ class Location {
     }
     func getZipCode() -> String {
         return self.zipCode;
+    }
+    func setWebsite(web : String)  {
+        self.website = web;
+    }
+    func getWebsite() -> String {
+        return self.website;
+    }
+    func setPhoneNo(phone : String)  {
+        self.phoneNo = phone;
+    }
+    func getPhoneNo() -> String {
+        return self.phoneNo;
     }
     func setType(typ : String)  {
         self.type = typ;

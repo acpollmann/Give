@@ -9,3 +9,5 @@
 import UIKit
 
 let GREEN_THEME = UIColor.rgb(r: 109, g: 201, b: 149)
+
+let DARK_GREEN = UIColor.rgb(r: 89, g: 156, b:120)

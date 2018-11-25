@@ -10,7 +10,7 @@ import UIKit
 
 class AddDonationController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    private var locationDataSource : [String] = [String]()
+    private var locationDataSource : [Location] = [Location]()
     private var locationPickerView: UIPickerView!
     private var locationText: String = ""
     
@@ -87,10 +87,11 @@ class AddDonationController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationDataSource = ["Location1", "Location2", "Location3"]
+        locationDataSource = singleton.sharedInstance.getLocations()
         categoryDataSource = ["Household", "Clothing", "Hat", "Kitchen", "Electronics", "Other"]
-        view.backgroundColor = GREEN_THEME
         
+        view.backgroundColor = GREEN_THEME
+        setupBackButton()
         setupTextFieldComponents()
         setupLocationPicker()
         setupCategoryPickerView()
@@ -100,7 +101,10 @@ class AddDonationController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         let newDonation = Donation(name: name.text!, timeStamp: timeStamp.text!, shortD: shortDescription.text!,
                                    fullD: fullDescription.text!, val: value.text!, cat: categoryText, loc: locationText)
-        
+        print(newDonation)
+        print(newDonation.getCategory())
+        print(newDonation.getTimeStamp())
+        print(newDonation.getFullDescription())
         singleton.sharedInstance.addDonation(newDonation: newDonation)
         
         let viewDonationsController = ViewDonationsController()
@@ -150,13 +154,12 @@ class AddDonationController: UIViewController, UIPickerViewDelegate, UIPickerVie
         addDonationButton.anchors(top: nil, topPad: 0, bottom: view.bottomAnchor, bottomPad: 0, left: view.leftAnchor, leftPad: 0, right: view.rightAnchor, rightPad: 0, height: 50, width: 0)
     }
 
-    
     fileprivate func setupLocationPicker() {
         
         locationPickerView = UIPickerView()
         
         // set size
-        locationPickerView.frame = CGRect.init(x: 0, y: 0, width: self.view.bounds.width, height: 100)
+        locationPickerView.frame = CGRect.init(x: 0, y: 100, width: self.view.bounds.width, height: 100)
         
         locationPickerView.dataSource = self
         locationPickerView.delegate = self
@@ -164,6 +167,21 @@ class AddDonationController: UIViewController, UIPickerViewDelegate, UIPickerVie
         // add it to view
         self.view.addSubview(locationPickerView)
     }
+    
+    fileprivate func setupCategoryPickerView() {
+        
+        categoryPickerView = UIPickerView()
+        
+        // set size
+        categoryPickerView.frame = CGRect.init(x: 0, y: 200, width: self.view.bounds.width, height: 100.0)
+        
+        categoryPickerView.dataSource = self
+        categoryPickerView.delegate = self
+        
+        // add it to view
+        self.view.addSubview(categoryPickerView)
+    }
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -179,7 +197,7 @@ class AddDonationController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (pickerView == locationPickerView){
-            locationText = locationDataSource[row]
+            locationText = locationDataSource[row].getName()
         }else{
             categoryText = categoryDataSource[row]
         }
@@ -196,24 +214,33 @@ class AddDonationController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         
         if (pickerView == locationPickerView) {
-            return NSAttributedString(string: String(locationDataSource[row]), attributes: [NSForegroundColorAttributeName:UIColor.white])
+            return NSAttributedString(string: String(describing: locationDataSource[row].getName()), attributes: [NSForegroundColorAttributeName:UIColor.white])
         }else{
             return NSAttributedString(string: String(categoryDataSource[row]), attributes: [NSForegroundColorAttributeName:UIColor.white])
         }
     }
     
-    fileprivate func setupCategoryPickerView() {
+
+    // back button
+    let backButton: UIButton = {
+        let b = UIButton(type: .system)
+        b.setTitleColor(.white, for: .normal)
+        b.setTitle("<", for: .normal)
+        b.layer.cornerRadius = 10
+        b.backgroundColor = DARK_GREEN
+        b.addTarget(self, action: #selector(backAction), for: .touchUpInside)
+        return b
+    }()
+    
+    fileprivate func setupBackButton() {
+        view.addSubview(backButton)
         
-        categoryPickerView = UIPickerView()
+        backButton.anchors(top: nil, topPad: 30, bottom: nil, bottomPad: 30, left: backButton.leftAnchor, leftPad: 30, right: backButton.rightAnchor, rightPad: 30, height: 50, width: 50)
         
-        // set size
-        categoryPickerView.frame = CGRect.init(x: locationPickerView.leftAnchor.accessibilityActivationPoint.x, y: 100, width: self.view.bounds.width, height: 100.0)
-        
-        categoryPickerView.dataSource = self
-        categoryPickerView.delegate = self
-        
-        // add it to view
-        self.view.addSubview(categoryPickerView)
+    }
+    @objc func backAction() {
+        let welcomeScreenController = WelcomeScreenController()
+        navigationController?.pushViewController(welcomeScreenController, animated: true)
     }
 
     

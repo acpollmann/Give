@@ -16,8 +16,18 @@ class WelcomeScreenController: UIViewController{
         a.setTitleColor(.white, for: .normal)
         a.setTitle("Add Donation", for: .normal)
         a.layer.cornerRadius = 10
-        a.backgroundColor = UIColor.rgb(r: 89, g: 156, b: 120)
+        a.backgroundColor = DARK_GREEN
         a.addTarget(self, action: #selector(addDonationAction), for: .touchUpInside)
+        return a
+    }()
+    
+    let addLocationButton: UIButton = {
+        let a = UIButton(type: .system)
+        a.setTitleColor(.white, for: .normal)
+        a.setTitle("Add Location", for: .normal)
+        a.layer.cornerRadius = 10
+        a.backgroundColor = DARK_GREEN
+        a.addTarget(self, action: #selector(addLocationAction), for: .touchUpInside)
         return a
     }()
     
@@ -46,7 +56,7 @@ class WelcomeScreenController: UIViewController{
         m.setTitle("View Donations", for: .normal)
         m.layer.cornerRadius = 10
         m.backgroundColor = UIColor.rgb(r: 89, g: 156, b: 120)
-        m.addTarget(self, action: #selector(viewMapAction), for: .touchUpInside)
+        m.addTarget(self, action: #selector(viewDonationsAction), for: .touchUpInside)
         return m
     }()
    
@@ -76,6 +86,7 @@ class WelcomeScreenController: UIViewController{
         view.backgroundColor = GREEN_THEME
         setupLogo()
         setupAddDonationButton()
+        setupAddLocationButton()
         setupViewLocationsButton()
         setupViewMapButton()
         setupSearchByDonationButton()
@@ -92,10 +103,21 @@ class WelcomeScreenController: UIViewController{
         navigationController?.pushViewController(addDonationController, animated: true)
     }
     
+    @objc func addLocationAction() {
+        let addLocationController = AddLocationController()
+        navigationController?.pushViewController(addLocationController, animated: true)
+    }
+    
     @objc func viewLocationsAction() {
         let viewLocationsController = ViewLocationsController()
         navigationController?.pushViewController(viewLocationsController, animated: true)
     }
+    
+    @objc func viewDonationsAction() {
+        let viewDonationsController = ViewDonationsController()
+        navigationController?.pushViewController(viewDonationsController, animated: true)
+    }
+    
     
     @objc func viewMapAction() {
         let viewMapController = ViewMapController()
@@ -119,9 +141,14 @@ class WelcomeScreenController: UIViewController{
         addDonationButton.anchors(top: logo.bottomAnchor, topPad: 50, bottom: nil, bottomPad: 0, left: logo.leftAnchor, leftPad: 0, right: logo.rightAnchor, rightPad: 0, height: 50, width: 0)
     }
     
+    fileprivate func setupAddLocationButton() {
+        view.addSubview(addLocationButton)
+        addLocationButton.anchors(top: addDonationButton.bottomAnchor, topPad: 12, bottom: nil, bottomPad: 0, left: addDonationButton.leftAnchor, leftPad: 0, right: addDonationButton.rightAnchor, rightPad: 0, height: 50, width: 0)
+    }
+    
     fileprivate func setupViewLocationsButton() {
         view.addSubview(viewLocationsButton)
-        viewLocationsButton.anchors(top: addDonationButton.bottomAnchor, topPad: 12, bottom: nil, bottomPad: 0, left: addDonationButton.leftAnchor, leftPad: 0, right: addDonationButton.rightAnchor, rightPad: 0, height: 50, width: 0)
+        viewLocationsButton.anchors(top: addLocationButton.bottomAnchor, topPad: 12, bottom: nil, bottomPad: 0, left: addLocationButton.leftAnchor, leftPad: 0, right: addLocationButton.rightAnchor, rightPad: 0, height: 50, width: 0)
     }
     
     fileprivate func setupViewMapButton() {

@@ -19,6 +19,10 @@ class singleton {
     
     func addDonation(newDonation: Donation) {
         Donations.append(newDonation)
+        print("Donation added!")
+        print(Donations.count)
+        print(Donations)
+        print(Donations[0])
         donationsCounter += 1
     }
     
@@ -41,6 +45,30 @@ class singleton {
     func usersSize() -> Int {
         return usersCounter
     }
+    func getDonationsStringArray() -> [String]{
+        print("here")
+        var donationStringArray = [String]()
+        donationStringArray.append("Test")
+        donationStringArray.append("What's Up")
+        print(Donations.count)
+        
+        for donation in Donations {
+            print("here2")
+
+            donationStringArray.append(donation.getName())
+            print(donation.getName())
+        }
+        return donationStringArray
+    }
+    func getDonations() -> Array<Donation> {
+        return Donations;
+    }
+    func getLocations() -> Array<Location> {
+        return Locations;
+    }
+    
+   
+
     
     
     

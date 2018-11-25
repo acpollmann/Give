@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4C089044BCA42FA498AB2367 /* Pods_Give.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E9190810EF58A387763AB5 /* Pods_Give.framework */; };
+		A7A8633A21AA5F3C001D647E /* ViewDonationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8633921AA5F3C001D647E /* ViewDonationDetailController.swift */; };
+		A7A8633E21AB052D001D647E /* ViewLocationDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8633D21AB052D001D647E /* ViewLocationDetailController.swift */; };
+		A7A8634121AB1345001D647E /* AddLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8634021AB1345001D647E /* AddLocationController.swift */; };
 		A7F90C7921A91E330042AD3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90C7821A91E330042AD3E /* AppDelegate.swift */; };
 		A7F90C7B21A91E330042AD3E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90C7A21A91E330042AD3E /* LoginController.swift */; };
 		A7F90C8021A91E330042AD3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F90C7F21A91E330042AD3E /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		92E9190810EF58A387763AB5 /* Pods_Give.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Give.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D3A4A35D18BC14E30B41EC /* Pods-Give.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Give.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Give/Pods-Give.debug.xcconfig"; sourceTree = "<group>"; };
+		A7A8633921AA5F3C001D647E /* ViewDonationDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDonationDetailController.swift; sourceTree = "<group>"; };
+		A7A8633D21AB052D001D647E /* ViewLocationDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLocationDetailController.swift; sourceTree = "<group>"; };
+		A7A8634021AB1345001D647E /* AddLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationController.swift; sourceTree = "<group>"; };
 		A7F90C7521A91E330042AD3E /* Give.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Give.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F90C7821A91E330042AD3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F90C7A21A91E330042AD3E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -81,6 +87,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A7A8633F21AB1330001D647E /* AddLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8634021AB1345001D647E /* AddLocationController.swift */,
+			);
+			name = AddLocation;
+			sourceTree = "<group>";
+		};
 		A7F90C6C21A91E330042AD3E = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +125,7 @@
 				A7F90CBA21A9E6170042AD3E /* ViewLocations */,
 				A7F90CB921A9E6000042AD3E /* ViewDonations */,
 				A7F90CB821A9E5F80042AD3E /* AddDonation */,
+				A7A8633F21AB1330001D647E /* AddLocation */,
 				A7F90CB521A9DC6A0042AD3E /* WelcomeScreen */,
 				A7F90CAC21A93C1C0042AD3E /* Register */,
 				A7F90CAB21A93C140042AD3E /* Login */,
@@ -188,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				A7F90CBE21A9EDC40042AD3E /* ViewDonationsController.swift */,
+				A7A8633921AA5F3C001D647E /* ViewDonationDetailController.swift */,
 			);
 			name = ViewDonations;
 			sourceTree = "<group>";
@@ -195,6 +211,7 @@
 		A7F90CBA21A9E6170042AD3E /* ViewLocations */ = {
 			isa = PBXGroup;
 			children = (
+				A7A8633D21AB052D001D647E /* ViewLocationDetailController.swift */,
 				A7F90CC021A9EDE30042AD3E /* ViewLocationsController.swift */,
 			);
 			name = ViewLocations;
@@ -353,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A8634121AB1345001D647E /* AddLocationController.swift in Sources */,
 				A7F90CBD21A9E64A0042AD3E /* AddDonationController.swift in Sources */,
 				A7F90CC121A9EDE30042AD3E /* ViewLocationsController.swift in Sources */,
 				A7F90CD121AA12180042AD3E /* singleton.swift in Sources */,
@@ -360,12 +378,14 @@
 				A7F90CC321A9EDEF0042AD3E /* SearchDonationController.swift in Sources */,
 				A7F90C7B21A91E330042AD3E /* LoginController.swift in Sources */,
 				A7F90C7921A91E330042AD3E /* AppDelegate.swift in Sources */,
+				A7A8633A21AA5F3C001D647E /* ViewDonationDetailController.swift in Sources */,
 				A7F90CCF21AA07FE0042AD3E /* User.swift in Sources */,
 				A7F90CCD21AA039F0042AD3E /* Location.swift in Sources */,
 				A7F90CA821A91FDA0042AD3E /* constants.swift in Sources */,
 				A7F90CC621A9EEBD0042AD3E /* ViewMapController.swift in Sources */,
 				A7F90CB721A9DCC80042AD3E /* WelcomeScreenController.swift in Sources */,
 				A7F90CCB21AA03070042AD3E /* Donation.swift in Sources */,
+				A7A8633E21AB052D001D647E /* ViewLocationDetailController.swift in Sources */,
 				A7F90CBF21A9EDC40042AD3E /* ViewDonationsController.swift in Sources */,
 				A7F90CAA21A9331A0042AD3E /* extensions.swift in Sources */,
 			);

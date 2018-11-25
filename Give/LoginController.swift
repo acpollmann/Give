@@ -61,7 +61,7 @@ class LoginController: UIViewController {
     }()
     
     let haveAccountButton: UIButton = {
-        let color = UIColor.rgb(r: 89, g: 156, b:120)
+        let color = DARK_GREEN
         let font = UIFont.systemFont(ofSize: 16)
         let h = UIButton(type: .system)
             h.backgroundColor = GREEN_THEME
@@ -100,16 +100,19 @@ class LoginController: UIViewController {
     }
     
     @objc func loginButtonPressed() {
-        
-//        if (checkUserValid()) {
-//            let welcomeScreenController = WelcomeScreenController()
-//            navigationController?.pushViewController(welcomeScreenController, animated: true)
-//        } else {
-//            // add some sort of error message
-//            print("login failed")
-//        }
-        
-        
+        print(emailTextField)
+        print(passwordTextField)
+        if (emailTextField.text!.isEqual("User") && passwordTextField.text!.isEqual("pass")) {
+            let welcomeScreenController = WelcomeScreenController()
+            navigationController?.pushViewController(welcomeScreenController, animated: true)
+        } else {
+            // add some sort of error message
+            let alert = UIAlertView()
+            alert.title = "Oops"
+            alert.message = "Invalid Login"
+            alert.addButton(withTitle: "Dismiss")
+            alert.show()
+        }
     }
     
     fileprivate func checkUserValid() {

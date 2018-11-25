@@ -7,46 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C089044BCA42FA498AB2367 /* Pods_Give.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E9190810EF58A387763AB5 /* Pods_Give.framework */; };
 		A7F90C7921A91E330042AD3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90C7821A91E330042AD3E /* AppDelegate.swift */; };
-		A7F90C7B21A91E330042AD3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90C7A21A91E330042AD3E /* ViewController.swift */; };
-		A7F90C7E21A91E330042AD3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F90C7C21A91E330042AD3E /* Main.storyboard */; };
+		A7F90C7B21A91E330042AD3E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90C7A21A91E330042AD3E /* LoginController.swift */; };
 		A7F90C8021A91E330042AD3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F90C7F21A91E330042AD3E /* Assets.xcassets */; };
 		A7F90C8321A91E330042AD3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F90C8121A91E330042AD3E /* LaunchScreen.storyboard */; };
-		A7F90C8E21A91E330042AD3E /* GiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90C8D21A91E330042AD3E /* GiveTests.swift */; };
-		A7F90C9921A91E330042AD3E /* GiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90C9821A91E330042AD3E /* GiveUITests.swift */; };
+		A7F90CA821A91FDA0042AD3E /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CA721A91FDA0042AD3E /* constants.swift */; };
+		A7F90CAA21A9331A0042AD3E /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CA921A9331A0042AD3E /* extensions.swift */; };
+		A7F90CAE21A93C410042AD3E /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CAD21A93C410042AD3E /* RegisterController.swift */; };
+		A7F90CB421A9C4710042AD3E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F90CB321A9C4710042AD3E /* MainStoryboard.storyboard */; };
+		A7F90CB721A9DCC80042AD3E /* WelcomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CB621A9DCC80042AD3E /* WelcomeScreenController.swift */; };
+		A7F90CBD21A9E64A0042AD3E /* AddDonationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CBC21A9E6490042AD3E /* AddDonationController.swift */; };
+		A7F90CBF21A9EDC40042AD3E /* ViewDonationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CBE21A9EDC40042AD3E /* ViewDonationsController.swift */; };
+		A7F90CC121A9EDE30042AD3E /* ViewLocationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CC021A9EDE30042AD3E /* ViewLocationsController.swift */; };
+		A7F90CC321A9EDEF0042AD3E /* SearchDonationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CC221A9EDEF0042AD3E /* SearchDonationController.swift */; };
+		A7F90CC621A9EEBD0042AD3E /* ViewMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CC521A9EEBD0042AD3E /* ViewMapController.swift */; };
+		A7F90CCB21AA03070042AD3E /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CCA21AA03070042AD3E /* Donation.swift */; };
+		A7F90CCD21AA039F0042AD3E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CCC21AA039F0042AD3E /* Location.swift */; };
+		A7F90CCF21AA07FE0042AD3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CCE21AA07FE0042AD3E /* User.swift */; };
+		A7F90CD121AA12180042AD3E /* singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F90CD021AA12180042AD3E /* singleton.swift */; };
+		A7F90CD321AA15AE0042AD3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7F90CD221AA15AE0042AD3E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A7F90C8A21A91E330042AD3E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A7F90C6D21A91E330042AD3E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7F90C7421A91E330042AD3E;
-			remoteInfo = Give;
-		};
-		A7F90C9521A91E330042AD3E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A7F90C6D21A91E330042AD3E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7F90C7421A91E330042AD3E;
-			remoteInfo = Give;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		92E9190810EF58A387763AB5 /* Pods_Give.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Give.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D3A4A35D18BC14E30B41EC /* Pods-Give.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Give.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Give/Pods-Give.debug.xcconfig"; sourceTree = "<group>"; };
 		A7F90C7521A91E330042AD3E /* Give.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Give.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F90C7821A91E330042AD3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7F90C7A21A91E330042AD3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7F90C7D21A91E330042AD3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7F90C7A21A91E330042AD3E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		A7F90C7F21A91E330042AD3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F90C8221A91E330042AD3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A7F90C8421A91E330042AD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7F90C8921A91E330042AD3E /* GiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F90C8421A91E330042AD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Give/Info.plist; sourceTree = SOURCE_ROOT; };
 		A7F90C8D21A91E330042AD3E /* GiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveTests.swift; sourceTree = "<group>"; };
 		A7F90C8F21A91E330042AD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7F90C9421A91E330042AD3E /* GiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F90C9821A91E330042AD3E /* GiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveUITests.swift; sourceTree = "<group>"; };
 		A7F90C9A21A91E330042AD3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F90CA721A91FDA0042AD3E /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		A7F90CA921A9331A0042AD3E /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		A7F90CAD21A93C410042AD3E /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = ../RegisterController.swift; sourceTree = "<group>"; };
+		A7F90CB321A9C4710042AD3E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A7F90CB621A9DCC80042AD3E /* WelcomeScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenController.swift; sourceTree = "<group>"; };
+		A7F90CBC21A9E6490042AD3E /* AddDonationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDonationController.swift; sourceTree = "<group>"; };
+		A7F90CBE21A9EDC40042AD3E /* ViewDonationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDonationsController.swift; sourceTree = "<group>"; };
+		A7F90CC021A9EDE30042AD3E /* ViewLocationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLocationsController.swift; sourceTree = "<group>"; };
+		A7F90CC221A9EDEF0042AD3E /* SearchDonationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDonationController.swift; sourceTree = "<group>"; };
+		A7F90CC521A9EEBD0042AD3E /* ViewMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMapController.swift; sourceTree = "<group>"; };
+		A7F90CCA21AA03070042AD3E /* Donation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		A7F90CCC21AA039F0042AD3E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A7F90CCE21AA07FE0042AD3E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A7F90CD021AA12180042AD3E /* singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleton.swift; sourceTree = "<group>"; };
+		A7F90CD221AA15AE0042AD3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AACC83D17F6A4D9C23113CA6 /* Pods-Give.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Give.release.xcconfig"; path = "Pods/Target Support Files/Pods-Give/Pods-Give.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,33 +65,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7F90C8621A91E330042AD3E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7F90C9121A91E330042AD3E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4C089044BCA42FA498AB2367 /* Pods_Give.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EC456022D970EAB93756728 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4D3A4A35D18BC14E30B41EC /* Pods-Give.debug.xcconfig */,
+				AACC83D17F6A4D9C23113CA6 /* Pods-Give.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A7F90C6C21A91E330042AD3E = {
 			isa = PBXGroup;
 			children = (
+				A7F90CB321A9C4710042AD3E /* MainStoryboard.storyboard */,
 				A7F90C7721A91E330042AD3E /* Give */,
 				A7F90C8C21A91E330042AD3E /* GiveTests */,
 				A7F90C9721A91E330042AD3E /* GiveUITests */,
 				A7F90C7621A91E330042AD3E /* Products */,
+				9EC456022D970EAB93756728 /* Pods */,
+				CE7F5E7AAC806AC7E8F4C4BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				A7F90C7521A91E330042AD3E /* Give.app */,
-				A7F90C8921A91E330042AD3E /* GiveTests.xctest */,
-				A7F90C9421A91E330042AD3E /* GiveUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +105,23 @@
 		A7F90C7721A91E330042AD3E /* Give */ = {
 			isa = PBXGroup;
 			children = (
+				A7F90CC921AA02FA0042AD3E /* Model */,
+				A7F90CC421A9EEAB0042AD3E /* ViewMap */,
+				A7F90CBB21A9E61F0042AD3E /* SearchDonations */,
+				A7F90CBA21A9E6170042AD3E /* ViewLocations */,
+				A7F90CB921A9E6000042AD3E /* ViewDonations */,
+				A7F90CB821A9E5F80042AD3E /* AddDonation */,
+				A7F90CB521A9DC6A0042AD3E /* WelcomeScreen */,
+				A7F90CAC21A93C1C0042AD3E /* Register */,
+				A7F90CAB21A93C140042AD3E /* Login */,
 				A7F90C7821A91E330042AD3E /* AppDelegate.swift */,
-				A7F90C7A21A91E330042AD3E /* ViewController.swift */,
-				A7F90C7C21A91E330042AD3E /* Main.storyboard */,
+				A7F90CA921A9331A0042AD3E /* extensions.swift */,
+				A7F90CD021AA12180042AD3E /* singleton.swift */,
+				A7F90CA621A91FC30042AD3E /* utils */,
 				A7F90C7F21A91E330042AD3E /* Assets.xcassets */,
 				A7F90C8121A91E330042AD3E /* LaunchScreen.storyboard */,
 				A7F90C8421A91E330042AD3E /* Info.plist */,
+				A7F90CD221AA15AE0042AD3E /* GoogleService-Info.plist */,
 			);
 			path = Give;
 			sourceTree = "<group>";
@@ -125,6 +144,96 @@
 			path = GiveUITests;
 			sourceTree = "<group>";
 		};
+		A7F90CA621A91FC30042AD3E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90CA721A91FDA0042AD3E /* constants.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		A7F90CAB21A93C140042AD3E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90C7A21A91E330042AD3E /* LoginController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		A7F90CAC21A93C1C0042AD3E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90CAD21A93C410042AD3E /* RegisterController.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		A7F90CB521A9DC6A0042AD3E /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90CB621A9DCC80042AD3E /* WelcomeScreenController.swift */,
+			);
+			name = WelcomeScreen;
+			sourceTree = "<group>";
+		};
+		A7F90CB821A9E5F80042AD3E /* AddDonation */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90CBC21A9E6490042AD3E /* AddDonationController.swift */,
+			);
+			name = AddDonation;
+			sourceTree = "<group>";
+		};
+		A7F90CB921A9E6000042AD3E /* ViewDonations */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90CBE21A9EDC40042AD3E /* ViewDonationsController.swift */,
+			);
+			name = ViewDonations;
+			sourceTree = "<group>";
+		};
+		A7F90CBA21A9E6170042AD3E /* ViewLocations */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90CC021A9EDE30042AD3E /* ViewLocationsController.swift */,
+			);
+			name = ViewLocations;
+			sourceTree = "<group>";
+		};
+		A7F90CBB21A9E61F0042AD3E /* SearchDonations */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90CC221A9EDEF0042AD3E /* SearchDonationController.swift */,
+			);
+			name = SearchDonations;
+			sourceTree = "<group>";
+		};
+		A7F90CC421A9EEAB0042AD3E /* ViewMap */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90CC521A9EEBD0042AD3E /* ViewMapController.swift */,
+			);
+			name = ViewMap;
+			sourceTree = "<group>";
+		};
+		A7F90CC921AA02FA0042AD3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7F90CCA21AA03070042AD3E /* Donation.swift */,
+				A7F90CCC21AA039F0042AD3E /* Location.swift */,
+				A7F90CCE21AA07FE0042AD3E /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE7F5E7AAC806AC7E8F4C4BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92E9190810EF58A387763AB5 /* Pods_Give.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7F90C9D21A91E330042AD3E /* Build configuration list for PBXNativeTarget "Give" */;
 			buildPhases = (
+				DC9674C26A11641F11B1DB5E /* [CP] Check Pods Manifest.lock */,
 				A7F90C7121A91E330042AD3E /* Sources */,
 				A7F90C7221A91E330042AD3E /* Frameworks */,
 				A7F90C7321A91E330042AD3E /* Resources */,
+				D584292F45F71F591D0DCD79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,42 +255,6 @@
 			productName = Give;
 			productReference = A7F90C7521A91E330042AD3E /* Give.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A7F90C8821A91E330042AD3E /* GiveTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7F90CA021A91E330042AD3E /* Build configuration list for PBXNativeTarget "GiveTests" */;
-			buildPhases = (
-				A7F90C8521A91E330042AD3E /* Sources */,
-				A7F90C8621A91E330042AD3E /* Frameworks */,
-				A7F90C8721A91E330042AD3E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A7F90C8B21A91E330042AD3E /* PBXTargetDependency */,
-			);
-			name = GiveTests;
-			productName = GiveTests;
-			productReference = A7F90C8921A91E330042AD3E /* GiveTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A7F90C9321A91E330042AD3E /* GiveUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7F90CA321A91E330042AD3E /* Build configuration list for PBXNativeTarget "GiveUITests" */;
-			buildPhases = (
-				A7F90C9021A91E330042AD3E /* Sources */,
-				A7F90C9121A91E330042AD3E /* Frameworks */,
-				A7F90C9221A91E330042AD3E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A7F90C9621A91E330042AD3E /* PBXTargetDependency */,
-			);
-			name = GiveUITests;
-			productName = GiveUITests;
-			productReference = A7F90C9421A91E330042AD3E /* GiveUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -195,18 +270,6 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 7K4UTAD5VR;
 						ProvisioningStyle = Automatic;
-					};
-					A7F90C8821A91E330042AD3E = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7K4UTAD5VR;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A7F90C7421A91E330042AD3E;
-					};
-					A7F90C9321A91E330042AD3E = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7K4UTAD5VR;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A7F90C7421A91E330042AD3E;
 					};
 				};
 			};
@@ -224,8 +287,6 @@
 			projectRoot = "";
 			targets = (
 				A7F90C7421A91E330042AD3E /* Give */,
-				A7F90C8821A91E330042AD3E /* GiveTests */,
-				A7F90C9321A91E330042AD3E /* GiveUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,78 +296,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F90CB421A9C4710042AD3E /* MainStoryboard.storyboard in Resources */,
+				A7F90CD321AA15AE0042AD3E /* GoogleService-Info.plist in Resources */,
 				A7F90C8321A91E330042AD3E /* LaunchScreen.storyboard in Resources */,
 				A7F90C8021A91E330042AD3E /* Assets.xcassets in Resources */,
-				A7F90C7E21A91E330042AD3E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7F90C8721A91E330042AD3E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7F90C9221A91E330042AD3E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D584292F45F71F591D0DCD79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Give/Pods-Give-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Give/Pods-Give-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC9674C26A11641F11B1DB5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Give-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7F90C7121A91E330042AD3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7F90C7B21A91E330042AD3E /* ViewController.swift in Sources */,
+				A7F90CBD21A9E64A0042AD3E /* AddDonationController.swift in Sources */,
+				A7F90CC121A9EDE30042AD3E /* ViewLocationsController.swift in Sources */,
+				A7F90CD121AA12180042AD3E /* singleton.swift in Sources */,
+				A7F90CAE21A93C410042AD3E /* RegisterController.swift in Sources */,
+				A7F90CC321A9EDEF0042AD3E /* SearchDonationController.swift in Sources */,
+				A7F90C7B21A91E330042AD3E /* LoginController.swift in Sources */,
 				A7F90C7921A91E330042AD3E /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7F90C8521A91E330042AD3E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7F90C8E21A91E330042AD3E /* GiveTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7F90C9021A91E330042AD3E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7F90C9921A91E330042AD3E /* GiveUITests.swift in Sources */,
+				A7F90CCF21AA07FE0042AD3E /* User.swift in Sources */,
+				A7F90CCD21AA039F0042AD3E /* Location.swift in Sources */,
+				A7F90CA821A91FDA0042AD3E /* constants.swift in Sources */,
+				A7F90CC621A9EEBD0042AD3E /* ViewMapController.swift in Sources */,
+				A7F90CB721A9DCC80042AD3E /* WelcomeScreenController.swift in Sources */,
+				A7F90CCB21AA03070042AD3E /* Donation.swift in Sources */,
+				A7F90CBF21A9EDC40042AD3E /* ViewDonationsController.swift in Sources */,
+				A7F90CAA21A9331A0042AD3E /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		A7F90C8B21A91E330042AD3E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A7F90C7421A91E330042AD3E /* Give */;
-			targetProxy = A7F90C8A21A91E330042AD3E /* PBXContainerItemProxy */;
-		};
-		A7F90C9621A91E330042AD3E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A7F90C7421A91E330042AD3E /* Give */;
-			targetProxy = A7F90C9521A91E330042AD3E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		A7F90C7C21A91E330042AD3E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7F90C7D21A91E330042AD3E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7F90C8121A91E330042AD3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,6 +482,7 @@
 		};
 		A7F90C9E21A91E330042AD3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D3A4A35D18BC14E30B41EC /* Pods-Give.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7K4UTAD5VR;
@@ -428,6 +496,7 @@
 		};
 		A7F90C9F21A91E330042AD3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AACC83D17F6A4D9C23113CA6 /* Pods-Give.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7K4UTAD5VR;
@@ -436,64 +505,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gatech.edu.Give;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		A7F90CA121A91E330042AD3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7K4UTAD5VR;
-				INFOPLIST_FILE = GiveTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gatech.edu.GiveTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Give.app/Give";
-			};
-			name = Debug;
-		};
-		A7F90CA221A91E330042AD3E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7K4UTAD5VR;
-				INFOPLIST_FILE = GiveTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gatech.edu.GiveTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Give.app/Give";
-			};
-			name = Release;
-		};
-		A7F90CA421A91E330042AD3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 7K4UTAD5VR;
-				INFOPLIST_FILE = GiveUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gatech.edu.GiveUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Give;
-			};
-			name = Debug;
-		};
-		A7F90CA521A91E330042AD3E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 7K4UTAD5VR;
-				INFOPLIST_FILE = GiveUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gatech.edu.GiveUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Give;
 			};
 			name = Release;
 		};
@@ -516,22 +527,7 @@
 				A7F90C9F21A91E330042AD3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		A7F90CA021A91E330042AD3E /* Build configuration list for PBXNativeTarget "GiveTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7F90CA121A91E330042AD3E /* Debug */,
-				A7F90CA221A91E330042AD3E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		A7F90CA321A91E330042AD3E /* Build configuration list for PBXNativeTarget "GiveUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7F90CA421A91E330042AD3E /* Debug */,
-				A7F90CA521A91E330042AD3E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

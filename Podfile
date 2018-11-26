@@ -8,5 +8,7 @@ target 'Give' do
   # Pods for Give
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
 
 end

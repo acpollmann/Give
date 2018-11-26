@@ -92,6 +92,7 @@ class RegisterController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
 
         let newUser = User(un: emailTextField.text!, pw: passwordTextField.text!, type: accountType)
         singleton.sharedInstance.addUser(newUser: newUser)
+        
         let welcomeScreenController = WelcomeScreenController()
         navigationController?.pushViewController(welcomeScreenController, animated: true)
     }

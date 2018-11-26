@@ -66,10 +66,16 @@ class singleton {
     func getLocations() -> Array<Location> {
         return Locations;
     }
-    
-   
-
-    
-    
+    func getUsers() -> Array<User> {
+        return Users;
+    }
+    public func checkUser(un: String, pw: String) -> Bool{
+        for user in Users {
+            if (un == user.getUsername() && pw == user.getPassword()) {
+                return true
+            }
+        }
+        return false
+    }
     
 }

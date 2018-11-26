@@ -102,7 +102,7 @@ class LoginController: UIViewController {
     @objc func loginButtonPressed() {
         print(emailTextField)
         print(passwordTextField)
-        if (emailTextField.text!.isEqual("User") && passwordTextField.text!.isEqual("pass")) {
+        if (singleton.sharedInstance.checkUser(un: emailTextField.text!, pw: passwordTextField.text!)) {
             let welcomeScreenController = WelcomeScreenController()
             navigationController?.pushViewController(welcomeScreenController, animated: true)
         } else {
@@ -115,9 +115,9 @@ class LoginController: UIViewController {
         }
     }
     
-    fileprivate func checkUserValid() {
-        //if ()
-    }
+//    fileprivate func checkUserValid() {
+//        //if ()
+//    }
     
     fileprivate func setupLogo() {
         view.addSubview(logo)
